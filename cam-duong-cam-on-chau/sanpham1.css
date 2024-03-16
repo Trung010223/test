@@ -1,0 +1,549 @@
+@import url();
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+header,
+nav,
+main,
+footer {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 1500px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.lienlac {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(81, 161, 81);
+}
+
+.lienlac ul {
+  margin-left: 250px;
+}
+
+.lienlac ul li {
+  float: left;
+  padding-left: 90px;
+  margin-top: 10px;
+}
+.lienlac ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header a {
+  margin-bottom: 40px;
+}
+
+.header .logo img {
+  width: 80px;
+  margin-left: 27px;
+  border-radius: 50%;
+}
+.logo span {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(81, 161, 81);
+}
+
+nav .header {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  list-style: none;
+}
+.menu ul {
+  margin-right: 400px;
+}
+
+.menu ul li {
+  float: left;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-bottom: 70px;
+}
+.menu ul li a {
+  color: #362f2f;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 30px;
+}
+.menu ul li a:hover {
+  color: rgb(81, 161, 81);
+}
+.menu ul li .dropdown {
+  display: inline-block;
+}
+
+.menu .content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding-top: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.menu .content a {
+  color: #362f2f;
+  font-size: 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menu .dropdown:hover .content {
+  display: block;
+}
+
+#actions {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 250px;
+}
+
+#actions .item {
+  margin-left: 30px;
+  width: 50px;
+  font-size: 25px;
+}
+.banner {
+  width: 100%;
+  background-image: url(/img/header/banner.jpg);
+  height: 213px;
+  display: flex;
+  padding: 0 133px;
+  position: relative;
+}
+
+.banner h2 {
+  font-size: 50px;
+  color: white;
+  margin-top: 69px;
+  font-weight: bold;
+}
+/* Hàm main */
+.parent-section {
+  width: 90%;
+  margin: 0 auto; /* Canh giữa phần tử */
+  margin-top: 80px;
+}
+
+.left-div {
+  width: 75%;
+  float: left;
+  margin-top: 50px;
+  height: 2700px;
+}
+
+.right-div {
+  width: 25%;
+  float: right;
+  margin-top: 50px;
+  height: 2700px;
+}
+/* left-div */
+.left-div .sanpham {
+  display: flex;
+}
+.left-div .sanpham img {
+  width: 370px;
+  height: 250px;
+  margin: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.sanpham {
+  background-color: #edf1ef;
+  width: 96%;
+  border-radius: 10px;
+  height: 300px;
+}
+.information {
+  margin: auto;
+}
+.sanpham .information h2 {
+  font-size: 30px;
+  color: green;
+}
+.sanpham .information .gia {
+  width: 320px;
+  height: 60px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+.sanpham .information .gia .giagoc {
+  text-decoration: line-through;
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.sanpham .information .gia .giaban {
+  color: red;
+  font-weight: bold;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+.sanpham .information .donvi {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.information .giohang {
+  width: 200px;
+  height: 50px;
+  color: #f9f9f9;
+  background-color: rgb(11, 151, 21);
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Mô tả */
+.mota {
+  margin-top: 120px;
+}
+.mota h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.mota .dau {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.than img {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.than .noidung {
+  font-size: 17px;
+  margin: auto 50px;
+}
+/* Sản phẩm */
+#wp-products {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 90%;
+}
+
+#wp-products img {
+  width: 240px;
+  height: 180px;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+#wp-products h2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #362f2f;
+}
+
+#products {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#products .item {
+  width: 200px;
+  height: 304px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  border: 1px solid #aaafad;
+  box-shadow: 0 0 5px rgba(42, 42, 42, 0.5);
+}
+
+#products .item img {
+  width: 170px;
+  height: 130px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 0px;
+}
+
+#products .item .stars {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 225, 53);
+  display: flex;
+  margin: 0px auto;
+  width: 50%;
+}
+
+#products .item .name {
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#products .gia {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+#products .item .cost,
+#products .item .price {
+  text-align: center;
+  font-size: 13px;
+  float: left;
+  border-radius: 5px;
+  border: 1px solid #727675;
+  color: black;
+  width: 30%;
+  height: 40px;
+  padding-top: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#products .item .price {
+  font-weight: bold;
+  background-color: rgb(95, 219, 95);
+}
+#products .item .cost {
+  text-decoration: line-through;
+}
+#products .giohang {
+  background-color: #d9dfdc;
+  border: 1px solid #626a67;
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#list-products .item .price {
+  font-weight: bold;
+  background-color: rgb(95, 219, 95);
+}
+#products .item .cost {
+  text-decoration: line-through;
+}
+#products .giohang {
+  background-color: #d9dfdc;
+  border: 1px solid #626a67;
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+/* Banner */
+
+#wp-products .banner3 {
+  width: 80%;
+  height: 400px;
+}
+/* right-div */
+.list-products {
+  display: flex;
+  align-items: flex-start;
+}
+
+.right-div .list-products {
+  width: 300px;
+  height: 90px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #aaafad;
+  box-shadow: 0 0 5px rgba(42, 42, 42, 0.5);
+}
+.left {
+  flex: 1;
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.right-div h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.right-div h3 {
+  font-size: 24px;
+  margin-top: 300px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+}
+.list-products {
+  display: flex;
+  margin-bottom: 10px;
+}
+.list-products .item {
+  display: contents;
+  justify-content: flex-end;
+}
+.list-products .name {
+  color: rgb(11, 151, 21);
+  font-size: 14px;
+  padding-bottom: 15px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.list-products .gia {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.list-products .giagoc {
+  text-decoration: line-through;
+  color: black;
+  font-size: 14px;
+}
+.list-products .giaban {
+  color: rgb(11, 151, 21);
+  font-weight: bold;
+  font-size: 14px;
+}
+.list-products img {
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: rgb(81, 161, 81);
+  height: 250px;
+  margin-top: 100px;
+  padding: 0px 50px;
+  padding-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .box {
+  width: 250px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.footer .logo img {
+  width: 85px;
+  border-radius: 50%;
+  margin-left: 24px;
+}
+.footer .logo span {
+  margin-right: 100px;
+  color: white;
+  font-weight: bolder;
+  padding-right: 100px;
+}
+.footer .box .quick-menu {
+  margin-top: 20px;
+}
+
+.footer .box .quick-menu .item {
+  margin-bottom: 12px;
+}
+.footer .box .quick-menu .item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .box p {
+  margin-left: -30px;
+  margin-right: 50px;
+}
+
+.footer .box form input {
+  width: 294px;
+  height: 42px;
+  background: none;
+  padding-left: 20px;
+  color: #fff;
+  margin-top: 13px;
+}
+
+.footer .lienhe {
+  width: 59%;
+  margin-right: 160px;
+  margin-bottom: 50px;
+}
+
+.footer .lienhe h3 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer .lienhe .thongtin {
+  color: white;
+  margin-bottom: 9px;
+}
+.footer .lienhe .thongtin i {
+  margin-right: 10px;
+  color: red;
+}
+.footer .box {
+  margin-right: 40px;
+}
+.footer .box form button {
+  background: #362f2f;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+  width: 163px;
+  height: 38px;
+  margin-top: 10px;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
